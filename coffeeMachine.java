@@ -3,7 +3,7 @@ package machine;
 import java.util.Scanner;  // Import the Scanner class
 
 public class CoffeeMachine {
-	public static int money = 550;
+    public static int money = 550;
     public static int water = 400;
     public static int milk = 540;
     public static int coffee = 120;
@@ -47,11 +47,9 @@ public class CoffeeMachine {
         cups--;
         money += price;
         System.out.println("I have enough resources, making you a coffee!");
-        
     }
     
     public static void main(String[] args) {
-       
         //method for printing current stock levels, required before and after each operation
         enoughStock = true;
         on = true;
@@ -75,7 +73,6 @@ public class CoffeeMachine {
                             if (enoughStock) {
                                 makeCoffee();
                             }
-        
                             break;
                             
                         case "2" :
@@ -84,7 +81,7 @@ public class CoffeeMachine {
                             reqWater = 350;
                             reqMilk = 75;
                             reqCoffee = 20;
-                            
+         
                             checkStock(reqWater, reqMilk, reqCoffee);
                             if (enoughStock) {
                                 makeCoffee();
@@ -102,7 +99,6 @@ public class CoffeeMachine {
                             if (enoughStock) {
                                 makeCoffee();
                             }
-                            
                             break;
                     }            
                     break;
